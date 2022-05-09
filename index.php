@@ -12,6 +12,7 @@
 
     //include title
     include "title.php";
+    include "page.php";
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +28,7 @@
 </head>
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <a href="index.php" class="navbar-brand">Akademik</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,8 +54,8 @@
 
 
     <!-- content -->
-    <div class="container mt-4">
-        
+    <div class="container" id="container">
+        <?php page($page) ?>
     </div>
 
     <!-- link script -->
