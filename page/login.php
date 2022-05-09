@@ -31,7 +31,7 @@
 <body>
     <div class="container-fluid" id="form">
         <h2>Login</h2>
-        <form action="" method="post">
+        <form method="post">
             <div class="mb-3">
                 <label for="username" class="form-label">Username</label>
                 <input type="text" name="user" class="form-control" placeholder="Username" autocomplete="off" required>
@@ -41,8 +41,8 @@
                 <input type="password" name="pass" class="form-control" placeholder="Password" autocomplete="off" required>
             </div>
             <div class="class-mb 3">
-                <button class="btn btn-primary">Login</button>
-                <button class="btn btn-danger">Reset</button>
+                <button type="submit" name="submit" class="btn btn-primary">Login</button>
+                <button type="reset" class="btn btn-danger">Reset</button>
             </div>
         </form>
     </div>
@@ -57,12 +57,12 @@
     // row check
     $row = mysqli_num_rows($s_user);
 
-    if ($row <= 0) {
-        echo "<script>window.alert('Username/Password Salah/Tidak ada!!!')</script>";
-    } else {
+    if ($row >= 1) {
         $data = mysqli_fetch_array($s_user);
         $_SESSION["user"] = $data['userid'];
         header("location:../index.php");
+    } else {
+        echo "<script>window.alert('Username/Password Salah/Tidak ada!!!')</script>";
     }
 
 ?>
