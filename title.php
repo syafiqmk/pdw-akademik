@@ -5,10 +5,6 @@
 
     function title($page) {
         switch ($page) {
-            case 'jurusan':
-                echo "Jurusan";
-                break;
-    
             case 'u-jur':
                 echo "Edit Jurusan";
                 break;
@@ -42,7 +38,7 @@
                 break;
             
             default:
-                echo "Default Title";
+                echo "Jurusan";
                 break;
         }
     }
