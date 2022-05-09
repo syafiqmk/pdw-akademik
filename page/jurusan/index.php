@@ -6,7 +6,10 @@
     $s_jur = mysqli_query($kon, "SELECT * FROM jurusan");
 
     // search
-
+    if (isset($_POST['submit'])) {
+        $kata = $_POST["kata"];
+        $s_jur = mysqli_query($kon, "SELECT * FROM jurusan WHERE nama_jurusan LIKE '%$kata%' ");
+    }
 ?>
 
 <div class="row">
