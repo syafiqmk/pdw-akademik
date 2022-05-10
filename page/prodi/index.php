@@ -9,6 +9,20 @@
         $kata = $_POST['kata'];
         $s_prod = mysqli_query($kon, "SELECT * FROM prodi JOIN jurusan WHERE jurusan.id_jurusan = prodi.id_jurusan AND (jurusan.nama_jurusan LIKE '%$kata%' OR prodi.nama_prodi LIKE '%$kata%')");
     }
+
+    //check hapus
+    if (isset($_POST['hapus'])) {
+        $id = $_POST["hapus"];
+
+        $s_maha = mysqli_query($kon, "SELECT * FROM mahasiswa WHERE id_prodi = '$id'");
+        $row = mysqli_num_rows($s_maha);
+
+        if ($row >= 1) {
+            echo "<script>window.alert('Prodi memiliki data di Mahasiswa. Data Prodi tidak bisa dihapus!')</script>";
+        } else {
+            header("location:index.php?page=d-prod&id=$id");
+        }
+    }
 ?>
 
 <div class="row">
@@ -37,9 +51,12 @@
                         <td><?= $no++ ?></td>
                         <td><?= $d_prod['nama_prodi'] ?></td>
                         <td><?= $d_prod['nama_jurusan'] ?></td>
-                        <td>
-                            <a href="index.php?page=d-prod&id=<?= $d_prod['id_prodi']?>" class="btn btn-danger">Hapus</a>
-                            <a href="index.php?page=u-prod&id=<?= $d_prod['id_prodi']?>" class="btn btn-primary">Edit</a>
+                        <td class="d-flex">
+                            <!-- <a href="index.php?page=d-prod&id=//$d_prod['id_prodi']" class="btn btn-danger">Hapus</a> -->
+                            <form action="" method="post">
+                                <button type="submit" name="hapus" value="<?= $d_prod['id_prodi']?>" class="btn btn-danger">Hapus</button>
+                            </form>
+                            <a href="index.php?page=u-prod&id=<?= $d_prod['id_prodi']?>" class="btn btn-primary ms-1">Edit</a>
                         </td>
                     </tr>
             <?php }
