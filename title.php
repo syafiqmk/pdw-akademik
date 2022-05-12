@@ -36,6 +36,10 @@
             case 'c-maha':
                 echo "Tambah Mahasiswa";
                 break;
+
+            case 'det-maha':
+                echo "Detail Mahasiswa";
+                break;
             
             default:
                 echo "Jurusan";
