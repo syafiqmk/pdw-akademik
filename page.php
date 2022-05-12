@@ -49,6 +49,10 @@
                 include "page/mahasiswa/del.php";
                 break;
 
+            case 'det-maha':
+                include "page/mahasiswa/det-maha.php";
+                break;
+
             default:
                 include "page/jurusan/index.php";
                 break;
