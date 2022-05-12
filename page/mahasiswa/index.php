@@ -36,7 +36,7 @@
             <th>No</th>
             <th>NIM</th>
             <th>Nama</th>
-            <th>Jenis Kelamin</th>
+            <!-- <th>Jenis Kelamin</th> -->
             <th>Prodi</th>
             <th>Action</th>
         </thead>
@@ -48,23 +48,23 @@
                         <td><?= $no++ ?></td>
                         <td><?= $d_maha['nim'] ?></td>
                         <td><?= $d_maha['nama'] ?></td>
-                        <td>
+                        <!-- <td> -->
                             <?php 
-                                switch ($d_maha['kelamin']) {
-                                    case '1':
-                                        echo "Laki-laki";
-                                        break;
+                                // switch ($d_maha['kelamin']) {
+                                //     case '1':
+                                //         echo "Laki-laki";
+                                //         break;
 
-                                    case '2':
-                                        echo "Perempuan";
-                                        break;
+                                //     case '2':
+                                //         echo "Perempuan";
+                                //         break;
                                     
-                                    default:
-                                        # code...
-                                        break;
-                                }
+                                //     default:
+                                //         # code...
+                                //         break;
+                                // }
                             ?>
-                        </td>
+                        <!-- </td> -->
                         <td><?= $d_maha['nama_prodi'] ?></td>
                         <td>
                             <a href="index.php?page=d-maha&id=<?= $d_maha['nim']?>" class="btn btn-danger">Hapus</a>
