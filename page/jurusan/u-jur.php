@@ -24,7 +24,7 @@
 
 <div class="row">
     <h2 class="text-center">Edit Data</h2>
-    <form action="" method="post">
+    <form action="" method="post" class="input-form">
         <div class="mb-3">
             <label for="" class="form-label">Nama Jurusan</label>
             <input type="text" name="nama" placeholder="Nama Jurusan" value="<?= $d_jur['nama_jurusan']?>" class="form-control" autocomplete="off" required>

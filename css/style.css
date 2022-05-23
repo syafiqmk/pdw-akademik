@@ -1,3 +1,8 @@
 #container {
     margin-top: 80px;
 }
+
+.input-form {
+    width: 50vw;
+    margin: auto;
+}

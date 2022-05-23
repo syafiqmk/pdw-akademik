@@ -25,9 +25,9 @@
 ?>
 
 <div class="row">
-    <h2>Edit Data</h2>
+    <h2 class="text-center">Edit Data</h2>
 
-    <form action="" method="post">
+    <form action="" method="post" class="input-form">
         <div class="mb-3">
             <label for="" class="input-label">Nama Prodi</label>
             <input name="nama" type="text" placeholder="Nama Prodi" autocomplete="off" required value="<?= $d_prod['nama_prodi']?>" class="form-control">

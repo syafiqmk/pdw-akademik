@@ -34,9 +34,9 @@
 ?>
 
 <div class="row">
-    <h2>Edit Data</h2>
+    <h2 class="text-center">Edit Data</h2>
 
-    <form action="" method="post">
+    <form action="" method="post" class="input-form">
         <div class="mb-3">
             <label for="" class="input-label">NIM</label>
             <input value="<?= $d_maha['nim']?>" type="number" name="nim" placeholder="NIM" autocomplete="off" required class="form-control">
