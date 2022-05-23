@@ -13,8 +13,8 @@
 <div class="row">
     <h2 class="text-center">Detail Mahasiswa</h2>
 
-    <a href="index.php?page=u-maha&id=<?= $id?>" class="btn btn-primary mb-2">Edit</a>
-    <a href="index.php?page=d-maha&id=<?= $id?>" class="btn btn-danger mb-2">Hapus</a>
+    <a href="index.php?page=u-maha&id=<?= $id?>" class="btn btn-primary mb-2"><i class="fa-solid fa-wrench"></i> Edit</a>
+    <a href="index.php?page=d-maha&id=<?= $id?>" class="btn btn-danger mb-2"><i class="fa-solid fa-trash-can"></i> Hapus</a>
 
     <table class="table">
         <tr>
@@ -30,7 +30,7 @@
         <tr>
             <td>Tanggal Lahir</td>
             <td>:</td>
-            <td><?= $d_maha['tgl_lahir'] ?></td>
+            <td><?= date("d/M/Y", strtotime($d_maha['tgl_lahir'])) ?></td>
         </tr>
         <tr>
             <td>Alamat</td>

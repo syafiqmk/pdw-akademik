@@ -30,12 +30,12 @@
 <div class="row">
     <h2 class="text-center">Data Jurusan</h2>
 
-    <a href="index.php?page=c-jur" class="btn btn-primary mb-3">Tambah Data</a>
+    <a href="index.php?page=c-jur" class="btn btn-primary mb-3"><i class="fa-solid fa-pencil"></i> Tambah Data</a>
 
     <form action="" method="post">
         <div class="input-group mb-3">
             <input type="text" name="kata" class="form-control" placeholder="Search" autocomplete="off">
-            <button type="submit" name="submit" class="btn btn-primary">Search</button>
+            <button type="submit" name="submit" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
         </div>
     </form>
 
@@ -55,9 +55,9 @@
                         <td class="d-flex">
                             <!-- <a href="index.php?page=d-jur&id= //$d_jur['id_jurusan']" class="btn btn-danger">Hapus</a> -->
                             <form action="" method="post">
-                                <button type="submit" name="hapus" value="<?= $d_jur['id_jurusan']?>" class="btn btn-danger">Hapus</button>
+                                <button type="submit" name="hapus" value="<?= $d_jur['id_jurusan']?>" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> Hapus</button>
                             </form>
-                            <a href="index.php?page=u-jur&id=<?= $d_jur['id_jurusan']?>" class="btn btn-primary ms-1">Edit</a>
+                            <a href="index.php?page=u-jur&id=<?= $d_jur['id_jurusan']?>" class="btn btn-primary ms-1"><i class="fa-solid fa-wrench"></i> Edit</a>
                         </td>
                     </tr>
                 <?php }

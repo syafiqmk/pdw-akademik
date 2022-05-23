@@ -60,5 +60,6 @@
 
     <!-- link script -->
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://kit.fontawesome.com/c8ae339e7b.js" crossorigin="anonymous"></script>
 </body>
 </html>

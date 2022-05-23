@@ -27,12 +27,12 @@
 
 <div class="row">
     <h2 class="text-center">Data Prodi</h2>
-    <a href="index.php?page=c-prod" class="btn btn-primary mb-3">Tambah Data</a>
+    <a href="index.php?page=c-prod" class="btn btn-primary mb-3"><i class="fa-solid fa-pencil"></i> Tambah Data</a>
 
     <form action="" method="post">
         <div class="input-group mb-3">
             <input type="text" name="kata" placeholder="Search" autocomplete="off" class="form-control">
-            <button type="submit" name="submit" class="btn btn-primary">Search</button>
+            <button type="submit" name="submit" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
         </div>
     </form>
 
@@ -54,9 +54,9 @@
                         <td class="d-flex">
                             <!-- <a href="index.php?page=d-prod&id=//$d_prod['id_prodi']" class="btn btn-danger">Hapus</a> -->
                             <form action="" method="post">
-                                <button type="submit" name="hapus" value="<?= $d_prod['id_prodi']?>" class="btn btn-danger">Hapus</button>
+                                <button type="submit" name="hapus" value="<?= $d_prod['id_prodi']?>" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> Hapus</button>
                             </form>
-                            <a href="index.php?page=u-prod&id=<?= $d_prod['id_prodi']?>" class="btn btn-primary ms-1">Edit</a>
+                            <a href="index.php?page=u-prod&id=<?= $d_prod['id_prodi']?>" class="btn btn-primary ms-1"><i class="fa-solid fa-wrench"></i> Edit</a>
                         </td>
                     </tr>
             <?php }

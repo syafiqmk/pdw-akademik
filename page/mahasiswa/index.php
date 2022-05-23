@@ -22,12 +22,12 @@
 <div class="row">
     <h2 class="text-center">Data Mahasiswa</h2>
 
-    <a href="index.php?page=c-maha" class="btn btn-primary mb-3">Tambah Data</a>
+    <a href="index.php?page=c-maha" class="btn btn-primary mb-3"><i class="fa-solid fa-pencil"></i> Tambah Data</a>
 
     <form action="" method="post">
         <div class="input-group mb-3">
             <input type="text" name="kata" placeholder="Search" autocomplete="off" class="form-control">
-            <button type="submit" name="submit" class="btn btn-primary">Search</button>
+            <button type="submit" name="submit" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
         </div>
     </form>
 
@@ -67,9 +67,9 @@
                         <!-- </td> -->
                         <td><?= $d_maha['nama_prodi'] ?></td>
                         <td>
-                            <a href="index.php?page=d-maha&id=<?= $d_maha['nim']?>" class="btn btn-danger">Hapus</a>
-                            <a href="index.php?page=u-maha&id=<?= $d_maha['nim']?>" class="btn btn-primary">Edit</a>
-                            <a href="index.php?page=det-maha&id=<?= $d_maha['nim']?>" class="btn btn-success">Detail</a>
+                            <a href="index.php?page=d-maha&id=<?= $d_maha['nim']?>" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> Hapus</a>
+                            <a href="index.php?page=u-maha&id=<?= $d_maha['nim']?>" class="btn btn-primary"><i class="fa-solid fa-wrench"></i> Edit</a>
+                            <a href="index.php?page=det-maha&id=<?= $d_maha['nim']?>" class="btn btn-success"><i class="fa-solid fa-list"></i> Detail</a>
                         </td>
                     </tr>
                 <?php }
