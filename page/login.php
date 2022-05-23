@@ -24,7 +24,7 @@
     <style>
         #form {
             margin-top: 100px;
-            width: 500px;
+            width: 50vh;
         }
     </style>
 </head>
